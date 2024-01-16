@@ -1,4 +1,12 @@
 import { useState } from 'react';
+import {
+  Container,
+  MainDiv,
+  BtnDown,
+  BtnUp,
+  ResetDiv,
+  BtnReset,
+} from './AppStyle';
 
 export const App = () => {
   const [count, setCount] = useState(0);
@@ -8,11 +16,21 @@ export const App = () => {
   const increment = () => {
     setCount(count + 1);
   };
+
+  const reset = () => {
+    setCount(0);
+  };
+
   return (
-    <div>
-      <h1>{count}</h1>
-      <button onClick={decrement}></button>
-      <button onClick={increment}></button>
-    </div>
+    <Container>
+      <MainDiv>
+        <BtnDown onClick={decrement}>Down</BtnDown>
+        <h1>{count}</h1>
+        <BtnUp onClick={increment}>Up</BtnUp>
+      </MainDiv>
+      <ResetDiv>
+        <BtnReset onClick={reset}>clear</BtnReset>
+      </ResetDiv>
+    </Container>
   );
 };
