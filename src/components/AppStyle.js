@@ -61,3 +61,7 @@ export const BtnReset = styled.button`
     background-color: wheat;
   }
 `;
+
+export const CountHead = styled.h1`
+  user-select: none;
+`;

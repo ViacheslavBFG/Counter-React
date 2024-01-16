@@ -6,6 +6,7 @@ import {
   BtnUp,
   ResetDiv,
   BtnReset,
+  CountHead,
 } from './AppStyle';
 
 export const App = () => {
@@ -25,7 +26,7 @@ export const App = () => {
     <Container>
       <MainDiv>
         <BtnDown onClick={decrement}>Down</BtnDown>
-        <h1>{count}</h1>
+        <CountHead>{count}</CountHead>
         <BtnUp onClick={increment}>Up</BtnUp>
       </MainDiv>
       <ResetDiv>
