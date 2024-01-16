@@ -15,6 +15,7 @@ export const BtnDown = styled.button`
   border: 2px solid #000;
   border-radius: 4px;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: #f0f0f0;
@@ -31,6 +32,7 @@ export const BtnUp = styled.button`
   border: 2px solid #000;
   border-radius: 4px;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: #f0f0f0;
@@ -53,6 +55,7 @@ export const BtnReset = styled.button`
   border: 2px solid #000;
   border-radius: 4px;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: #f0f0f0;
